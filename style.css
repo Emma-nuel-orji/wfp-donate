@@ -1,0 +1,234 @@
+.payment-button{
+    width: 85%;
+    background-color: rgb(203, 215, 218);
+    border-radius: 8px;
+    margin: 0 auto; /* This centers the div horizontally */
+    text-align: center; /* This centers the text content within the div */
+    height: 60px;
+}
+
+.payment-form{
+    height: 500px;
+    width: 85%;
+    background-color: rgb(203, 215, 218);
+    border-radius: 8px;
+    margin: 0 auto; /* This centers the div horizontally */
+    justify-content: center; /* This centers the text content within the div */
+}
+
+.payment-forms{
+    height: 240px;
+    width: 85%;
+    background-color: rgb(203, 215, 218);
+    border-radius: 8px;
+    margin: 0 auto; /* This centers the div horizontally */
+    justify-content: center; /* This centers the text content within the div */
+}
+
+.about{
+    height: 240px;
+    width: 85%;
+    border-radius: 8px;
+    margin: 0 auto; /* This centers the div horizontally */
+    justify-content: center; /* This centers the text content within the div */
+}
+.about2{
+    width: 20%;
+}
+
+.main-about{
+    padding-left: 40px;
+}
+.p{
+
+    width: 85%;
+
+
+    margin: 0 auto; /* This centers the div horizontally */
+    justify-content: center; /* This centers the text content within the div */
+}
+.pe{
+    width: 85%;
+    margin: 0 auto; /* This centers the div horizontally */
+    justify-content: center; /* This centers the text content within the div */
+  
+}
+.contact-details{
+    height: 600px;
+    width: 85%;
+    background-color: rgb(28, 70, 119);
+    border-radius: 8px;
+    margin: 0 auto; /* This centers the div horizontally */
+    justify-content: center; /* This centers the text content within the div */
+}
+.monthly-donation{
+    height: 270px;
+    width: 85%;
+    border-radius: 8px;
+    margin: 0 auto; /* This centers the div horizontally */
+    justify-content: center; /* This centers the text content within the div */
+}
+
+.monthly-donations{
+    height: 250px;
+    width: 85%;
+    border-radius: 8px;
+    margin: 0 auto; /* This centers the div horizontally */
+    justify-content: center; /* This centers the text content within the div */
+}
+.form{
+    width: 98%;
+    display: flex; 
+    padding-top: 20px; 
+    left: 0%;
+}
+.form1{
+    width: 60%;
+    
+}
+.form2{
+    width: 40%;
+}
+.h4{
+    font-weight: bold;
+    padding-left: 20px;
+}
+.h44{
+    font-weight: bold;
+    padding-left: 28px;
+}
+/* AI CODE */
+
+/* No changes in the CSS */
+
+/* Button styles */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 98%;
+    margin: 0 auto; /* This centers the div horizontally */
+    justify-content: center; /* This centers the text content within the div */
+    height: 50px;
+    padding-top: 8px;
+  }
+  
+  button {
+    background-color: #eee; /* Main background color */
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 5px;
+  }
+  
+  button.active {
+    background-color: blue; /* Background color for the active button */
+    color: white;
+    width: 50%;
+    border-radius: 5px;
+  }
+  
+  .content {
+    display: none; /* Hide content by default */
+    margin-top: 10px;
+  }
+  
+  .content.active {
+    display: block; /* Show content for the active button */
+  }
+  
+   .payment-btn{
+    /* background-color: blue; */
+    /* padding: 5px 10px; */
+    border: none;
+    cursor: pointer;
+    /* width: 90%; */
+    height: 45px;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+
+  .b{
+    display: flex;
+    width: 100%;
+    padding-left: 10px;
+    
+    
+}
+.main{
+    width: 19%;
+}
+
+.foot{
+    display: flex;
+    width: 85%;
+    margin: 0 auto; /* This centers the div horizontally */
+    justify-content: center; /* This centers the text content within the div */
+}
+.f{
+   display: flex; 
+   width:50%;
+}
+@media screen and (max-width: 1200px){
+    .pee{
+        width: 265%;
+    }
+    .about{
+        height: 450px;
+    }
+    .payment-form{
+        height: 640px;
+    }
+    .contact-details{
+        height: 900px;
+    }
+    .p{
+        width: 160%;
+       
+    }
+    .h44{
+        width: 160%;
+    }
+    .f{
+        display: block;
+        width: 250%;
+    }
+    .foot{
+        display: block;
+        width: 100%;
+       
+    }
+
+	.b{
+		display: block;
+        width: 100%;
+        
+	}
+    .payment-btn{
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .main{
+        width: 100%;
+        padding-top: 10px;
+    }
+    .form{
+        display: block;
+    }
+    .form2{
+        width: 100%;
+       
+        img{
+            width: 50%;
+        }
+    }
+    .pre-footer{
+        display: block;
+    }
+}
+
+.pre-footer{
+    display: flex;
+}

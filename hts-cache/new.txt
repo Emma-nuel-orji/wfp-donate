@@ -1,0 +1,5 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+10:19:42	25/25	---M--	200	added ('OK')	text/plain	date:Fri,%2027%20Oct%202023%2009:19:42%20GMT	https://donate.wfp.org/robots.txt		(from )
+10:19:43	23783/23783	---MCZ	200	added ('OK')	text/html	etag:%225ce7-/FFcGIEBKR8SCs/ZyyXKC4SyWY8%22	https://donate.wfp.org/1244/donation/	C:/My%20Web%20Sites/donate1/donate.wfp.org/1244/donation/index.html	(from )
+10:19:44	25/25	---M--	200	added ('OK')	text/plain	date:Fri,%2027%20Oct%202023%2009:19:44%20GMT	https://wfp.prod.go-donate.uk/robots.txt		(from https://donate.wfp.org/1244/donation/)
+10:19:45	0/0	---M--	302	error ('Found')	text/html	date:Fri,%2027%20Oct%202023%2009:19:45%20GMT	https://wfp.prod.go-donate.uk/	C:/My%20Web%20Sites/donate1/wfp.prod.go-donate.uk/index.html	(from https://donate.wfp.org/1244/donation/)
