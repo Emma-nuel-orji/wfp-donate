@@ -12,10 +12,16 @@
 	<!-- main contents goes here -->
 	<main data-fetch-key="0">
 		<div class="banner">
-			<img src="media/donate.png" alt="">
-		</div> <br>
+			<img src="media/famine.jpg" width="100%" alt="">
+			<h3 class="banner-text">DONATE NOW</h3>
+			<h5 class="banner-texts">Every donation provides nutritious food for hungry childrens and families.</h5>
+		</div>
+		
+		<!-- <div class="banner">
+			<img src="media/famine.jpg" width="100%" alt="">
+		</div>  -->
 
-		  
+		<br>
 
 		<div class="payment-button">
 			<div>
@@ -38,11 +44,29 @@
 					<br>
 					<h4 style="padding-left: 20px;">Make a monthly donation of</h4>
 					<div class="f">
+						<button class="buttn" onclick="changeColo(120)" id="btnc120" style="flex: 1; padding: 10px; margin: 5px; text-align: center; border: none; background-color: blue; color: white;">$10.00</button>
+						<button class="buttn" onclick="changeColo(220)" id="btnc220" style="flex: 1; padding: 10px; margin: 5px; text-align: center; border: none; background-color: white;">$18.00</button>
+						<button class="buttn" onclick="changeColo(320)" id="btnc320" style="flex: 1; padding: 10px; margin: 5px; text-align: center; border: none; background-color: white;">$27.00</button>
+					</div>
+					
+					<script>
+						function changeColo(amounts) {
+							var buttonss = document.getElementsByClassName('buttn');
+							for (var i = 0; i < buttonss.length; i++) {
+								buttonss[i].style.backgroundColor = 'white';
+								buttonss[i].style.color = 'black';
+							}
+							document.getElementById('btnc' + amounts).style.backgroundColor = 'blue';
+							document.getElementById('btnc' + amounts).style.color = 'white';
+						}
+					</script>
+					
+					<!-- <div class="f">
 						
 						<button onclick="changeColor(10)" id="btn10" style="flex: 1; padding: 10px; margin: 5px; text-align: center; border: none; background-color: #fff; ">$10.00</button>
 						<button onclick="changeColor(20)" id="btn20" style="flex: 1; padding: 10px; margin: 5px; text-align: center; border: none; background-color: #fff;">$18.00</button>
 						<button onclick="changeColor(30)" id="btn30" style="flex: 1; padding: 10px; margin: 5px; text-align: center; border: none; background-color: #fff;">$27.00</button>
-					</div>
+					</div> -->
 						<form class="p" style="padding-top: 20px; padding-right: 100px;" >
 							
 							<div class="pee" style="margin-bottom: 15px;">
@@ -75,10 +99,28 @@
 					<br>
 					<h4 style="padding-left: 20px;">Make a single donation of</h4>
 					<div class="f">
-						<button onclick="changeColor(10)" id="btn10" style="flex: 1; padding: 10px; margin: 5px; text-align: center; border: none; background-color: #fff; ">$18.00</button>
+						<button class="buttonss"  onclick="changeColor(10)" id="btns10" style="flex: 1; padding: 10px; margin: 5px; text-align: center; border: none; background-color: blue; color: white;">$10.00</button>
+						<button class="buttonss"  onclick="changeColor(20)" id="btns20" style="flex: 1; padding: 10px; margin: 5px; text-align: center; border: none; background-color: white;">$18.00</button>
+						<button class="buttonss"  onclick="changeColor(30)" id="btns30" style="flex: 1; padding: 10px; margin: 5px; text-align: center; border: none; background-color: white;">$27.00</button>
+					</div>
+					
+					<script>
+						function changeColor(amount) {
+							var buttons = document.getElementsByClassName('buttonss');
+							for (var i = 0; i < buttons.length; i++) {
+								buttons[i].style.backgroundColor = 'white';
+								buttons[i].style.color = 'black';
+							}
+							document.getElementById('btns' + amount).style.backgroundColor = 'blue';
+							document.getElementById('btns' + amount).style.color = 'white';
+						}
+					</script>
+					
+					<!-- <div class="f">
+						<button onclick="changeColor(10)" id="btn10" style="flex: 1; padding: 10px; margin: 5px; text-align: center; border: none; background-color: #0c20a1; ">$18.00</button>
 						<button onclick="changeColor(20)" id="btn20" style="flex: 1; padding: 10px; margin: 5px; text-align: center; border: none; background-color: #fff;">$38.00</button>
 						<button onclick="changeColor(30)" id="btn30" style="flex: 1; padding: 10px; margin: 5px; text-align: center; border: none; background-color: #fff;">$69.00</button>
-					</div>
+					</div> -->
 						<form class="p" style="padding-top: 20px; padding-right: 100px;" >
 							
 							<div class="pee" style="margin-bottom: 15px;">
@@ -110,7 +152,7 @@
 				<form class="p" style="padding-left:40px ">
 					<div style="margin-bottom: 15px;">
 						<label style="display: block; font-weight: bold; color: #ffffff;">Email address *</label>
-						<input type="email" id="email" name="email" placeholder="Your email" style="width: 100%; padding: 8px;">
+						<input required type="email" id="email" name="email" placeholder="Your email" style="width: 100%; padding: 8px;">
 					</div>
 					<div style="margin-bottom: 15px;">
 						<input type="checkbox" id="subscribe" name="subscribe" style="margin-right: 8px;">
@@ -126,7 +168,7 @@
 				<div class="h44">
 					<h6 style="color: white;">By providing your phone number you agree that WFP will use the personal information you share with us to send you information about our programmes, services and events by SMS, telephone (voice) and via messaging platforms i.e. WhatsApp.</h6>
 					<br>
-					<h6 style="color: white;">If you agree to receive marketing communications, you also agree to your personal data being processed and transferred outside the country where you live to send you these communications. To learn more about this and WFP’s personal data and privacy practices, please read our Donation Platform Privacy Notice. You can opt out of marketing communications at any time by emailing supportercare@wfp.org.</h6>
+					<h6 style="color: white;">If you agree to receive marketing communications, you also agree to your personal data being processed and transferred outside the country where you live to send you these communications. To learn more about this and WFP’s personal data and privacy practices, please read our Donation Platform Privacy Notice. You can opt out of marketing communications at any time by emailing supportercare@donatewfp.org.</h6>
 				</div>
 			  </div>
 		    </div>
@@ -152,8 +194,8 @@
 	                	  href="https://commerce.coinbase.com/checkout/4203d245-2e08-4d0e-ab1e-9fe9932b2a5f">
 	                	  Donate with Crypto
 	                	</a>
-	                	<!-- <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807">
-	                	</script> -->
+	                	<script src="https://commerce.coinbase.com/v1/checkout.js?version=201807">
+	                	</script>
 	                  </div>
   
 					 
@@ -170,7 +212,7 @@
 						  </div>
 					</div>
 				   
-					<div class="main">
+					<!-- <div class="main">
 						<div class="">
 							<a style="color: #fff;" class="donate-with-crypto"
 							  href="https://commerce.coinbase.com/checkout/4203d245-2e08-4d0e-ab1e-9fe9932b2a5f">
@@ -179,9 +221,27 @@
 							<script src="https://commerce.coinbase.com/v1/checkout.js?version=201807">
 							</script>
 						  </div>
-					</div>
+					</div> -->
 					
 				</div>
+				<br>
+				
+				<div class="donation-button">
+			    	<div class="h4">
+						<h4>OR</h4>
+						<h6>Contact the company for other payment methods</h6>
+						<!-- <div class="row justify-content-center mt-3 help-links"> -->
+							<div  class="text-center col-md-3">
+								<a style=" background:#313131;" href="mailto:supportercare@donatewfp.org" rel="noopener" target="_blank" class="btn bordered-button btn-secondary">
+									<img src="https://donate.wfp.org/media/qsnbnjsm/email-t.svg" loading="lazy"> 
+									<span>supportercare@donatewfp.org</span>
+								</a>
+								</div> <!---->
+							<!-- </div> -->
+						
+						
+					</div>
+			    </div>
 		    </div>
 		</div>
 
@@ -267,9 +327,9 @@
 			</div> 
 			<div class="row justify-content-center mt-3 help-links"><!----> <!----> 
 				<div class="text-center col-md-3">
-					<a href="mailto:supportercare@wfp.org" rel="noopener" target="_blank" class="btn bordered-button btn-secondary">
+					<a href="mailto:supportercare@donatewfp.org" rel="noopener" target="_blank" class="btn bordered-button btn-secondary">
 						<img src="https://donate.wfp.org/media/qsnbnjsm/email-t.svg" loading="lazy"> 
-						<span>supportercare@wfp.org</span>
+						<span>supportercare@donatewfp.org</span>
 					</a>
 					</div> <!---->
 				</div>
